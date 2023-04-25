@@ -1,0 +1,28 @@
+int global_var_uninited;
+int global_var_inited=42;
+
+int global_arr_uninited[3][3];
+int global_arr_inited[3][3] = {{1,2}, {3,4,5}, {6}};
+
+int fun(int x, int y, int z){
+	return x + y + z;
+}
+
+int main(){
+	int idx = getint();
+
+	int local_var_uninited;
+	int local_var_inited = getint();
+	
+	int local_arr_uninited[3][3];
+	int local_arr_inited[3][3] = {{1,2}, {3,4,5}, {6}};
+
+	int a = global_arr_inited[idx][idx + 1];
+	int b = local_var_inited;
+	int c = local_arr_inited[idx][idx-1];
+
+	int res = fun(a, b, c);
+	putint(res);
+
+	return 0;
+}

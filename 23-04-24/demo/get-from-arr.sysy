@@ -1,0 +1,13 @@
+int main(){
+	int idx = getint();
+
+	int ar[3] = {0,1,2};
+	ar[idx] = getint();
+
+	int ar2[3][3] = {{0,1}, {2,3,4}};
+	ar2[idx][idx] = getint();
+
+	putint(ar[idx] + ar2[idx][idx + idx]);
+
+	return 0;
+}

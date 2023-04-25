@@ -1,0 +1,8 @@
+int small_arr_inited[10][10] = {1,0};
+int small_arr_uninited[100];
+int large_arr_inited[1000][1000]={{1,2},{3,4}};
+int large_arr_uninited[1000][1000][10];
+
+int main(){
+	return 0;
+}

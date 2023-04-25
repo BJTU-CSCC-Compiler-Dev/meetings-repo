@@ -1,0 +1,9 @@
+int main(){
+	int cond = getint();
+	
+	if(cond){
+		return 1;
+	}else{
+		return 0;
+	}
+}
